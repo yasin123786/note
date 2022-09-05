@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Notes</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .cardNotes{
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="navSearchBox" class=" mr-sm-2" type="text" placeholder="Search">
+                <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="addNotesContainer">
+        <div class="container my-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"> <label for="notes">Add Notes</label> </h5>
+                    <div>
+                        <div class="form-group">
+                            <textarea class="form-control" cols="80" name="" id="notes" rows="15"  placeholder="WRITE THE NOTE"></textarea requrired>
+                        </div>
+                    </div>
+                    <button type="submit" id="addNoteBtn" onclick="insertNewNote()" type="button" class="bt btn-success">Add Notes</button>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="container mt-2">
+                <hr>
+                <h2 class="text-center text-success">My Notes</h2>
+                <hr>
+                <div class="row" id="showNotesContainer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
